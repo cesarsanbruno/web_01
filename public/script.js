@@ -10,7 +10,7 @@ async function sendMessage() {
     responseDiv.innerText = "Pensando...";
 
     try {
-        const response = await fetch('https://backend-openai.vercel.app/api/ask', { // Cambia esta URL a la del backend en Vercel
+        const response = await fetch('/api/ask', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: userInput })
