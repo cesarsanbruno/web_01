@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>¡Bienvenidos a mi super página web!</h1>
@@ -13,6 +14,17 @@
         <li>Estoy explorando el desarrollo web con la colbaracion de mi amiga ChatI.</li>
         <li>¡Gracias por visitar!</li>
     </ul>
+
+    <section id="virtual-assistant">
+        <h2>Asistente Virtual</h2>
+        <div id="chat-container">
+            <textarea id="user-input" placeholder="Escribe tu pregunta aquí"></textarea>
+            <button onclick="sendMessage()">Enviar</button>
+            <div id="response"></div>
+        </div>
+    </section>
+
+    
 </body>
 </html>
 
